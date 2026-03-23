@@ -11,6 +11,7 @@ public class WorldOverviewManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(PlayerPrefs.GetInt("Level2Complete"));
         // check welke levels voltooid zijn
         if (PlayerPrefs.GetInt("Level1Complete") == 1)
         {

@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 121093948}
   - component: {fileID: 121093952}
   - component: {fileID: 121093951}
+  - component: {fileID: 121093953}
   m_Layer: 5
   m_Name: Level4
   m_TagString: Untagged
@@ -358,6 +359,20 @@ MonoBehaviour:
   goatMover: {fileID: 0}
   transition: {fileID: 0}
   sceneName: 
+--- !u!114 &121093953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121093946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c71a9d196191545a8fc6b7b8fe3b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLock
+  requiredLevel: 4
+  button: {fileID: 121093948}
 --- !u!1 &128318425
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,6 +661,7 @@ GameObject:
   - component: {fileID: 318689481}
   - component: {fileID: 318689485}
   - component: {fileID: 318689484}
+  - component: {fileID: 318689486}
   m_Layer: 5
   m_Name: Level2
   m_TagString: Untagged
@@ -794,8 +810,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelButton
   levelIndex: 1
   goatMover: {fileID: 1074956785}
-  transition: {fileID: 0}
-  sceneName: 
+  transition: {fileID: 1362504920}
+  sceneName: Level2_Device
+--- !u!114 &318689486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318689479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c71a9d196191545a8fc6b7b8fe3b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLock
+  requiredLevel: 2
+  button: {fileID: 318689481}
 --- !u!1 &492484584
 GameObject:
   m_ObjectHideFlags: 0
@@ -810,6 +840,7 @@ GameObject:
   - component: {fileID: 492484586}
   - component: {fileID: 492484590}
   - component: {fileID: 492484589}
+  - component: {fileID: 492484591}
   m_Layer: 5
   m_Name: Level1
   m_TagString: Untagged
@@ -960,6 +991,20 @@ MonoBehaviour:
   goatMover: {fileID: 1074956785}
   transition: {fileID: 1362504920}
   sceneName: Level1_Referral
+--- !u!114 &492484591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492484584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c71a9d196191545a8fc6b7b8fe3b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLock
+  requiredLevel: 1
+  button: {fileID: 492484586}
 --- !u!1 &526875317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,6 +1940,7 @@ GameObject:
   - component: {fileID: 1823394158}
   - component: {fileID: 1823394162}
   - component: {fileID: 1823394161}
+  - component: {fileID: 1823394163}
   m_Layer: 5
   m_Name: Level3
   m_TagString: Untagged
@@ -2045,6 +2091,20 @@ MonoBehaviour:
   goatMover: {fileID: 1074956785}
   transition: {fileID: 0}
   sceneName: 
+--- !u!114 &1823394163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1823394156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c71a9d196191545a8fc6b7b8fe3b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLock
+  requiredLevel: 3
+  button: {fileID: 1823394158}
 --- !u!1 &1945246101
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,6 +2119,7 @@ GameObject:
   - component: {fileID: 1945246103}
   - component: {fileID: 1945246107}
   - component: {fileID: 1945246106}
+  - component: {fileID: 1945246108}
   m_Layer: 5
   m_Name: Level5
   m_TagString: Untagged
@@ -2209,6 +2270,20 @@ MonoBehaviour:
   goatMover: {fileID: 1074956785}
   transition: {fileID: 0}
   sceneName: 
+--- !u!114 &1945246108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945246101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3c71a9d196191545a8fc6b7b8fe3b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLock
+  requiredLevel: 5
+  button: {fileID: 1945246103}
 --- !u!1 &2032676974
 GameObject:
   m_ObjectHideFlags: 0

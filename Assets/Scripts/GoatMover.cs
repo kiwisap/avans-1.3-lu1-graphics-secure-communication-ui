@@ -11,11 +11,10 @@ public class GoatMover : MonoBehaviour
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-
         int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
-
+        int goatIndex = Mathf.Max(0, currentLevel - 1); // ← dit
         rectTransform.anchoredPosition =
-            levelPoints[currentLevel].GetComponent<RectTransform>().anchoredPosition;
+            levelPoints[goatIndex].GetComponent<RectTransform>().anchoredPosition;
     }
 
     public void MoveToLevel(int levelIndex)
