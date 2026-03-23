@@ -1558,6 +1558,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1362504918}
   m_CullTransparentMesh: 1
+--- !u!1 &1384208448
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1384208450}
+  - component: {fileID: 1384208449}
+  m_Layer: 0
+  m_Name: WorldOverviewManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1384208449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384208448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b835785a38c7cb6409a38e4f3001c955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WorldOverviewManager
+  level1Button: {fileID: 492484586}
+  level2Button: {fileID: 318689481}
+  level3Button: {fileID: 1823394158}
+  level4Button: {fileID: 121093948}
+  level5Button: {fileID: 1945246103}
+--- !u!4 &1384208450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1384208448}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1592448206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2246,3 +2295,4 @@ SceneRoots:
   - {fileID: 963831698}
   - {fileID: 526875321}
   - {fileID: 2032676977}
+  - {fileID: 1384208450}

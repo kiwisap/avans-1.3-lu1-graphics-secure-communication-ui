@@ -7,16 +7,19 @@ public class GoatMover : MonoBehaviour
     public float moveSpeed = 500f;
 
     private RectTransform rectTransform;
-    private int currentLevel = 0;
 
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
+
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
+
+        rectTransform.anchoredPosition =
+            levelPoints[currentLevel].GetComponent<RectTransform>().anchoredPosition;
     }
 
     public void MoveToLevel(int levelIndex)
     {
-        currentLevel = levelIndex;
         StopAllCoroutines();
         StartCoroutine(MoveGoat(levelPoints[levelIndex].GetComponent<RectTransform>().anchoredPosition));
     }
