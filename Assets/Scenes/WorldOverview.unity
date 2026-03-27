@@ -356,9 +356,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelButton
   levelIndex: 3
-  goatMover: {fileID: 0}
-  transition: {fileID: 0}
-  sceneName: 
+  goatMover: {fileID: 1074956785}
+  transition: {fileID: 1362504920}
+  sceneName: Level4_Test
 --- !u!114 &121093953
 MonoBehaviour:
   m_ObjectHideFlags: 0
