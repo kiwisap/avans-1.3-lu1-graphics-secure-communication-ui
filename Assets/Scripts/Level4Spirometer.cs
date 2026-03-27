@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class Level4Spirometer : MonoBehaviour
 {
@@ -9,83 +10,156 @@ public class Level4Spirometer : MonoBehaviour
     public RectTransform ball3;
 
     public TMP_Text missionText;
+    public TMP_Text countdownText;
+    public TMP_Text restText;
+
+    public Button startButton;
     public Button finishButton;
 
     public AudioSource audioSource;
-    public AudioClip rise1;
-    public AudioClip rise2;
-    public AudioClip rise3;
     public AudioClip applause;
 
     public GameObject confetti;
 
     private AudioClip micClip;
 
-    private bool sound1Played = false;
-    private bool sound2Played = false;
-    private bool sound3Played = false;
+    private int currentAttempt = 0;
+    private bool isBlowing = false;
+    private float silenceTimer = 0f;
+
+    private float minY = -250f;
+    private float maxY = 250f;
 
     void Start()
     {
         finishButton.gameObject.SetActive(false);
         confetti.SetActive(false);
+        countdownText.gameObject.SetActive(false);
+        restText.gameObject.SetActive(false);
 
         micClip = Microphone.Start(null, true, 10, 44100);
 
-        missionText.text = "Blaas zo hard mogelijk!";
+        missionText.text = "3 pogingen nodig";
     }
 
     void Update()
     {
+        if (!isBlowing) return;
+
         float volume = GetMicVolume();
 
-        if (ball1.anchoredPosition.y < 250)
-        {
-            MoveBall(ball1, Mathf.Clamp(volume * 12000f, 0, 500));
+        float target1 = Mathf.Clamp(minY + volume * 20000f, minY, maxY);
+        float target2 = Mathf.Clamp(minY + (volume - 0.015f) * 20000f, minY, maxY);
+        float target3 = Mathf.Clamp(minY + (volume - 0.03f) * 20000f, minY, maxY);
 
-            if (volume > 0.01f && !sound1Played)
-            {
-                audioSource.PlayOneShot(rise1);
-                sound1Played = true;
-            }
-        }
-        else if (ball2.anchoredPosition.y < 250)
-        {
-            MoveBall(ball2, Mathf.Clamp(volume * 12000f, 0, 500));
+        MoveBall(ball1, target1);
 
-            if (volume > 0.03f && !sound2Played)
-            {
-                audioSource.PlayOneShot(rise2);
-                sound2Played = true;
-            }
-        }
-        else if (ball3.anchoredPosition.y < 250)
+        if (ball1.anchoredPosition.y >= maxY - 5f)
         {
-            MoveBall(ball3, Mathf.Clamp(volume * 13000f, 0, 500));
-
-            if (volume > 0.05f && !sound3Played)
-            {
-                audioSource.PlayOneShot(rise3);
-                sound3Played = true;
-            }
+            MoveBall(ball2, target2);
         }
         else
         {
-            FinishLevel();
+            MoveBall(ball2, minY);
+        }
+
+        if (ball2.anchoredPosition.y >= maxY - 5f)
+        {
+            MoveBall(ball3, target3);
+        }
+        else
+        {
+            MoveBall(ball3, minY);
         }
 
         if (volume < 0.01f)
         {
-            sound1Played = false;
-            sound2Played = false;
-            sound3Played = false;
+            silenceTimer += Time.deltaTime;
+
+            if (silenceTimer > 1f)
+            {
+                EndAttempt();
+            }
         }
+        else
+        {
+            silenceTimer = 0f;
+        }
+    }
+
+    public void StartAttempt()
+    {
+        startButton.interactable = false;
+        StartCoroutine(Countdown());
+    }
+
+    IEnumerator Countdown()
+    {
+        countdownText.gameObject.SetActive(true);
+
+        countdownText.text = "3";
+        yield return new WaitForSeconds(1f);
+
+        countdownText.text = "2";
+        yield return new WaitForSeconds(1f);
+
+        countdownText.text = "1";
+        yield return new WaitForSeconds(1f);
+
+        countdownText.text = "BLAZEN!";
+        yield return new WaitForSeconds(0.5f);
+
+        countdownText.gameObject.SetActive(false);
+
+        isBlowing = true;
+    }
+
+    void EndAttempt()
+    {
+        isBlowing = false;
+
+        currentAttempt++;
+
+        if (currentAttempt >= 3)
+        {
+            missionText.text = "Perfect gedaan!";
+            finishButton.gameObject.SetActive(true);
+            confetti.SetActive(true);
+
+            audioSource.PlayOneShot(applause);
+        }
+        else
+        {
+            StartCoroutine(RestPhase());
+        }
+    }
+
+    IEnumerator RestPhase()
+    {
+        restText.gameObject.SetActive(true);
+
+        yield return new WaitForSeconds(2f);
+
+        ResetBalls();
+
+        restText.gameObject.SetActive(false);
+
+        missionText.text = "Poging " + (currentAttempt + 1);
+
+        startButton.interactable = true;
+    }
+
+    void ResetBalls()
+    {
+        ball1.anchoredPosition = new Vector2(ball1.anchoredPosition.x, minY);
+        ball2.anchoredPosition = new Vector2(ball2.anchoredPosition.x, minY);
+        ball3.anchoredPosition = new Vector2(ball3.anchoredPosition.x, minY);
     }
 
     void MoveBall(RectTransform ball, float targetY)
     {
         Vector2 pos = ball.anchoredPosition;
-        pos.y = Mathf.MoveTowards(pos.y, -250 + targetY, 400f * Time.deltaTime);
+        pos.y = Mathf.MoveTowards(pos.y, targetY, 400f * Time.deltaTime);
         ball.anchoredPosition = pos;
     }
 
@@ -106,16 +180,5 @@ public class Level4Spirometer : MonoBehaviour
         }
 
         return level / 128;
-    }
-
-    void FinishLevel()
-    {
-        missionText.text = "Perfect gedaan!";
-
-        finishButton.gameObject.SetActive(true);
-
-        audioSource.PlayOneShot(applause);
-
-        confetti.SetActive(true);
     }
 }
