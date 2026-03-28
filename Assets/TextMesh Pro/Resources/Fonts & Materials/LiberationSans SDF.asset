@@ -42,8 +42,8 @@ Material:
     - _ScaleRatioA: 0.9
     - _ScaleRatioB: 1
     - _ScaleRatioC: 0.24375
-    - _ScaleX: 1
-    - _ScaleY: 1
+    - _ScaleX: 5
+    - _ScaleY: 5
     - _ShaderFlags: 0
     - _Sharpness: 0
     - _Stencil: 0
@@ -55,7 +55,7 @@ Material:
     - _TextureWidth: 1024
     - _UnderlayDilate: 1
     - _UnderlayOffsetX: 1
-    - _UnderlayOffsetY: 1
+    - _UnderlayOffsetY: -1
     - _UnderlaySoftness: 1
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
