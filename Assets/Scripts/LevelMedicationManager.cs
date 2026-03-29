@@ -18,31 +18,31 @@ public class LevelMedicationManager : MonoBehaviour
 
     [Header("Gameplay")]
     public GoatGlider goatGlider;
-    public MedicationBGScroller backgroundScroller; // Nu één scroller
+    public MedicationBGScroller backgroundScroller;
     public float gameDuration = 60f;
-
     private float timeRemaining;
     private bool gameRunning = false;
-
     public ProceduralGround ground;
+
+    [Header("Game Over")]
+    public GameObject gameOverPanel;
 
     void Start()
     {
         startPanel.SetActive(true);
         timerTextObject.SetActive(false);
         finishButton.SetActive(false);
+        gameOverPanel.SetActive(false);
+        ground.gameObject.SetActive(false); // VERBERG GROND BIJ START
         goatGlider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         goatGlider.StopGame();
     }
 
     public void OnMedicationConfirmed()
     {
-        Debug.Log("Countdown active: " + countdownDisplay.gameObject.activeSelf);
-        Debug.Log("Countdown text: " + countdownDisplay.text);
-        Debug.Log("Medication confirmed aangeroepen!");
-        Debug.Log("GoatGlider object: " + goatGlider);
         startPanel.SetActive(false);
-        goatGlider.gameObject.GetComponent<SpriteRenderer>().enabled = true;
+        ground.gameObject.SetActive(true);
+        goatGlider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
         countdownDisplay.gameObject.SetActive(true);
         countdownTimer = countdownDuur;
         countingDown = true;
@@ -52,7 +52,7 @@ public class LevelMedicationManager : MonoBehaviour
 
     void Update()
     {
-        // Countdown loopt ALTIJD, niet alleen als gameRunning
+        // 1. Countdown
         if (countingDown)
         {
             countdownTimer -= Time.deltaTime;
@@ -66,6 +66,7 @@ public class LevelMedicationManager : MonoBehaviour
                 timerTextObject.SetActive(true);
                 timeRemaining = gameDuration;
                 gameRunning = true;
+                goatGlider.gameObject.GetComponent<SpriteRenderer>().enabled = true;
                 goatGlider.StartGame();
             }
             return;
@@ -73,6 +74,17 @@ public class LevelMedicationManager : MonoBehaviour
 
         if (!gameRunning) return;
 
+        // 2. Game over check
+        Camera cam = Camera.main;
+        Vector3 geitSchermPos = cam.WorldToViewportPoint(goatGlider.transform.position);
+        if (geitSchermPos.y < -0.3f || geitSchermPos.y > 1.3f)
+        {
+            gameRunning = false;
+            GameOver();
+            return;
+        }
+
+        // 3. Timer
         timeRemaining -= Time.deltaTime;
         int seconds = Mathf.CeilToInt(timeRemaining);
         timerDisplay.text = $"{seconds}s";
@@ -84,14 +96,32 @@ public class LevelMedicationManager : MonoBehaviour
         }
     }
 
+    void GameOver()
+    {
+        goatGlider.StopGame();
+        backgroundScroller.StopScrolling();
+        ground.StopScrolling();
+        timerTextObject.SetActive(false);
+        gameOverPanel.SetActive(true);
+    }
+
+    public void OnReplay()
+    {
+        gameOverPanel.SetActive(false);
+        goatGlider.gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        goatGlider.StopGame();
+        countdownDisplay.gameObject.SetActive(true);
+        countdownTimer = countdownDuur;
+        countingDown = true;
+        backgroundScroller.StartScrolling();
+        ground.StartScrolling();
+    }
+
     void OnTimerFinished()
     {
         goatGlider.StopGame();
-
         backgroundScroller.StopScrolling();
-
         ground.StopScrolling();
-
         timerTextObject.SetActive(false);
         finishButton.SetActive(true);
     }

@@ -5,77 +5,66 @@ using System.Collections.Generic;
 public class ProceduralGround : MonoBehaviour
 {
     [Header("Grond vorm")]
-    public int aantalPunten = 80;
-    public float breedte = 80f;
+    public int aantalPunten = 100;
+    public float breedte = 150f;
     public float golfHoogte = 2f;
-    public float golfFrequentie = 0.3f;
-    public float basisHoogte = -2.5f;
+    public float golfFrequentie = 0.08f; // Lager = grotere heuvels
+    public float basisHoogte = -2f;
 
     [Header("Scroll")]
-    public float scrollSpeed = 2.5f;
+    public GoatGlider goatGlider;
     private bool scrolling = false;
+    private float offset = 0f;
 
     [Header("Visueel")]
     public LineRenderer lineRenderer;
 
-    private Vector2[] punten;
-    private float offset = 0f;
+    void Start()
+    {
+        BerekenEnZetPunten();
+    }
 
     public void StartScrolling() => scrolling = true;
     public void StopScrolling() => scrolling = false;
 
-    void Start()
+    float GetY(float x)
     {
-        GenereerGrond();
+        return basisHoogte
+            + Mathf.Sin((x + offset) * golfFrequentie) * golfHoogte
+            + Mathf.Sin((x + offset) * golfFrequentie * 1.7f) * (golfHoogte * 0.2f);
     }
 
-    void GenereerGrond()
+    void BerekenEnZetPunten()
     {
         EdgeCollider2D edge = GetComponent<EdgeCollider2D>();
-        punten = new Vector2[aantalPunten];
+        Vector2[] punten = new Vector2[aantalPunten];
+        Vector3[] lijnPunten = new Vector3[aantalPunten];
 
-        BerekenPunten();
+        float startX = -breedte / 2f;
+        float stap = breedte / (aantalPunten - 1);
+
+        for (int i = 0; i < aantalPunten; i++)
+        {
+            float x = startX + i * stap;
+            float y = GetY(x);
+            punten[i] = new Vector2(x, y);
+            lijnPunten[i] = new Vector3(x, y, 0);
+        }
+
         edge.SetPoints(new List<Vector2>(punten));
 
         if (lineRenderer != null)
         {
             lineRenderer.positionCount = aantalPunten;
-            UpdateLijnRenderer();
+            lineRenderer.SetPositions(lijnPunten);
         }
-    }
-
-    void BerekenPunten()
-    {
-        for (int i = 0; i < aantalPunten; i++)
-        {
-            float x = (i / (float)(aantalPunten - 1)) * breedte - breedte / 2f;
-            float xSample = x + offset;
-            float y = basisHoogte
-                + Mathf.Sin(xSample * golfFrequentie) * golfHoogte
-                + Mathf.Sin(xSample * golfFrequentie * 2.7f) * (golfHoogte * 0.3f);
-            punten[i] = new Vector2(x, y);
-        }
-    }
-
-    void UpdateLijnRenderer()
-    {
-        Vector3[] lijnPunten = new Vector3[aantalPunten];
-        for (int i = 0; i < aantalPunten; i++)
-            lijnPunten[i] = new Vector3(punten[i].x, punten[i].y, 0);
-        lineRenderer.SetPositions(lijnPunten);
     }
 
     void Update()
     {
-        if (!scrolling) return;
+        if (!scrolling || goatGlider == null) return;
 
-        offset += scrollSpeed * Time.deltaTime;
-
-        EdgeCollider2D edge = GetComponent<EdgeCollider2D>();
-        BerekenPunten();
-        edge.SetPoints(new List<Vector2>(punten));
-
-        if (lineRenderer != null)
-            UpdateLijnRenderer();
+        offset += goatGlider.HorizontaleSnelheid * Time.deltaTime;
+        BerekenEnZetPunten();
     }
 }

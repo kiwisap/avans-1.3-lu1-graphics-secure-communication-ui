@@ -4,7 +4,8 @@ public class MedicationBGScroller : MonoBehaviour
 {
     public RectTransform bgA;
     public RectTransform bgB;
-    public float scrollSpeed = 300f;
+    public GoatGlider goatGlider; // Koppel de Goat hieraan
+    public float scrollSpeedMultiplier = 80f; // Canvas units per game unit
     private bool scrolling = false;
     private float bgWidth = 1920f;
     private float startY = 540f;
@@ -21,12 +22,13 @@ public class MedicationBGScroller : MonoBehaviour
 
     void Update()
     {
-        if (!scrolling) return;
+        if (!scrolling || goatGlider == null) return;
 
-        bgA.anchoredPosition += Vector2.left * scrollSpeed * Time.deltaTime;
-        bgB.anchoredPosition += Vector2.left * scrollSpeed * Time.deltaTime;
+        float speed = goatGlider.HorizontaleSnelheid * scrollSpeedMultiplier * Time.deltaTime;
 
-        // Volledig van het scherm af = positie onder -960 (want start is 960, breedte 1920)
+        bgA.anchoredPosition += Vector2.left * speed;
+        bgB.anchoredPosition += Vector2.left * speed;
+
         if (bgA.anchoredPosition.x < -960f)
             bgA.anchoredPosition = new Vector2(bgB.anchoredPosition.x + bgWidth, startY);
 
