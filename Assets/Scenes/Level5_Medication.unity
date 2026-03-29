@@ -394,12 +394,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d298f5d393fb7c4ca7eb7964bf46302, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProceduralGround
-  aantalPunten: 80
-  breedte: 60
+  aantalPunten: 200
+  breedte: 300
   golfHoogte: 1.5
   golfFrequentie: 0.4
   basisHoogte: -3
   goatGlider: {fileID: 1902093085}
+  goat: {fileID: 1902093084}
   lineRenderer: {fileID: 280656671}
 --- !u!1839735485 &280656673
 Tilemap:
@@ -2720,10 +2721,10 @@ MonoBehaviour:
   gravityHigh: 4
   gravitySmoothSpeed: 8
   minSpeed: 3
-  maxSpeed: 15
-  versnellingFactor: 2
+  maxSpeed: 10
+  versnellingFactor: 1.5
   rotatieSmoothSpeed: 8
-  maxRotatie: 35
+  maxRotatie: 90
 --- !u!212 &1902093086
 SpriteRenderer:
   serializedVersion: 2

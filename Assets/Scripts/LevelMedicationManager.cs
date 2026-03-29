@@ -46,6 +46,7 @@ public class LevelMedicationManager : MonoBehaviour
         countdownDisplay.gameObject.SetActive(true);
         countdownTimer = countdownDuur;
         countingDown = true;
+        goatGlider.gameObject.GetComponent<SpriteRenderer>().enabled = true; // true ipv false
         backgroundScroller.StartScrolling();
         ground.StartScrolling();
     }

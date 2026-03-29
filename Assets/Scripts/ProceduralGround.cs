@@ -5,10 +5,10 @@ using System.Collections.Generic;
 public class ProceduralGround : MonoBehaviour
 {
     [Header("Grond vorm")]
-    public int aantalPunten = 100;
-    public float breedte = 150f;
+    public int aantalPunten = 200;
+    public float breedte = 300f;
     public float golfHoogte = 2f;
-    public float golfFrequentie = 0.08f; // Lager = grotere heuvels
+    public float golfFrequentie = 0.08f;
     public float basisHoogte = -2f;
 
     [Header("Scroll")]
@@ -16,11 +16,16 @@ public class ProceduralGround : MonoBehaviour
     private bool scrolling = false;
     private float offset = 0f;
 
+    [Header("Volg geit")]
+    public Transform goat;
+
     [Header("Visueel")]
     public LineRenderer lineRenderer;
 
     void Start()
     {
+        // Object altijd op 0 houden
+        transform.position = Vector3.zero;
         BerekenEnZetPunten();
     }
 
@@ -40,7 +45,9 @@ public class ProceduralGround : MonoBehaviour
         Vector2[] punten = new Vector2[aantalPunten];
         Vector3[] lijnPunten = new Vector3[aantalPunten];
 
-        float startX = -breedte / 2f;
+        // Grond start vanaf geit X positie en loopt ver naar rechts
+        float goatX = goat != null ? goat.position.x : 0f;
+        float startX = goatX - breedte * 0.2f;  // Klein stukje achter de geit
         float stap = breedte / (aantalPunten - 1);
 
         for (int i = 0; i < aantalPunten; i++)
