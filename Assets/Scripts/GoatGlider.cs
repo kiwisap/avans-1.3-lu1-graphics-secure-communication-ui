@@ -1,19 +1,31 @@
 using UnityEngine;
+using UnityEngine.InputSystem.EnhancedTouch;
 
 public class GoatGlider : MonoBehaviour
 {
+    [Header("Referenties")]
     public Rigidbody2D rb;
-    public float gravityLow = 1f;
-    public float gravityHigh = 4f;
-    public float maxFallSpeed = 10f;
+
+    [Header("Besturing")]
+    public float gravityLow = 0.8f;
+    public float gravityHigh = 3.5f;
+    public float maxFallSpeed = 12f;
+    public float maxRiseSpeed = 8f;
+    public float gravitySmoothSpeed = 5f;
 
     private bool gameActive = false;
 
+    void Awake()
+    {
+        EnhancedTouchSupport.Enable();
+        rb.simulated = false;
+    }
+
     public void StartGame()
     {
+        Debug.Log("StartGame aangeroepen!");
         gameActive = true;
         rb.simulated = true;
-        gameObject.SetActive(true);
     }
 
     public void StopGame()
@@ -23,22 +35,15 @@ public class GoatGlider : MonoBehaviour
         rb.linearVelocity = Vector2.zero;
     }
 
-    void Start()
-    {
-        rb.simulated = false;
-        gameObject.SetActive(false); // Geit verborgen bij start
-    }
-
     void Update()
     {
         if (!gameActive) return;
 
-        if (Input.GetMouseButton(0))
-            rb.gravityScale = gravityHigh;
-        else
-            rb.gravityScale = gravityLow;
+        bool pressing = UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches.Count > 0;
 
-        if (rb.linearVelocity.y < -maxFallSpeed)
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, -maxFallSpeed);
+        rb.gravityScale = Mathf.Lerp(rb.gravityScale, pressing ? gravityHigh : gravityLow, gravitySmoothSpeed * Time.deltaTime);
+
+        float vy = Mathf.Clamp(rb.linearVelocity.y, -maxFallSpeed, maxRiseSpeed);
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, vy);
     }
 }
