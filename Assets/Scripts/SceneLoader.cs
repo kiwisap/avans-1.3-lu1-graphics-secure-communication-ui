@@ -17,15 +17,13 @@ public class SceneLoader : MonoBehaviour
 
     public void OnKindGekozen()
     {
-        PlayerPrefs.SetString("GebruikerType", "kind");
-        PlayerPrefs.Save();
+        GameState.IsOuder = false;
         StartCoroutine(FadeNaarScene("WorldOverview"));
     }
 
     public void OnOuderGekozen()
     {
-        PlayerPrefs.SetString("GebruikerType", "ouder");
-        PlayerPrefs.Save();
+        GameState.IsOuder = true;
         StartCoroutine(FadeNaarScene("WorldOverview"));
     }
 
