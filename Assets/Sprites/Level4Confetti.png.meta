@@ -1,0 +1,2301 @@
+fileFormatVersion: 2
+guid: b06ec15da411f7d4ab700e0574a17bdf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -844583574507563206
+    second: Level4Confetti_0
+  - first:
+      213: 4666162639276504608
+    second: Level4Confetti_1
+  - first:
+      213: -334721892577355083
+    second: Level4Confetti_2
+  - first:
+      213: 8362360661669045702
+    second: Level4Confetti_3
+  - first:
+      213: -933495110091405176
+    second: Level4Confetti_4
+  - first:
+      213: -1639939837440444667
+    second: Level4Confetti_5
+  - first:
+      213: -5147113757786387722
+    second: Level4Confetti_6
+  - first:
+      213: -428484869584364410
+    second: Level4Confetti_7
+  - first:
+      213: 9160117329024027527
+    second: Level4Confetti_8
+  - first:
+      213: -7746922123216858742
+    second: Level4Confetti_9
+  - first:
+      213: -2554125045313466863
+    second: Level4Confetti_10
+  - first:
+      213: 3348361196542770293
+    second: Level4Confetti_11
+  - first:
+      213: 6255773202182548778
+    second: Level4Confetti_12
+  - first:
+      213: -5182484907754042246
+    second: Level4Confetti_13
+  - first:
+      213: 1498519625001996523
+    second: Level4Confetti_14
+  - first:
+      213: -3896238888810414675
+    second: Level4Confetti_15
+  - first:
+      213: 2707445267044408761
+    second: Level4Confetti_16
+  - first:
+      213: -6095714725508123252
+    second: Level4Confetti_17
+  - first:
+      213: 3792100207946874728
+    second: Level4Confetti_18
+  - first:
+      213: 7471293373289137572
+    second: Level4Confetti_19
+  - first:
+      213: 7875565208843120470
+    second: Level4Confetti_20
+  - first:
+      213: -3645560628842629240
+    second: Level4Confetti_21
+  - first:
+      213: 5983822802720830488
+    second: Level4Confetti_22
+  - first:
+      213: -2527303020708879878
+    second: Level4Confetti_23
+  - first:
+      213: -6095943098128358929
+    second: Level4Confetti_24
+  - first:
+      213: 8251721355985144641
+    second: Level4Confetti_25
+  - first:
+      213: 816995513918649327
+    second: Level4Confetti_26
+  - first:
+      213: 635107846523685756
+    second: Level4Confetti_27
+  - first:
+      213: 2495522960027423008
+    second: Level4Confetti_28
+  - first:
+      213: -5896064313370243323
+    second: Level4Confetti_29
+  - first:
+      213: -6627561478509951628
+    second: Level4Confetti_30
+  - first:
+      213: 1592694952469093656
+    second: Level4Confetti_31
+  - first:
+      213: -5556151455316951903
+    second: Level4Confetti_32
+  - first:
+      213: -4856180769148348635
+    second: Level4Confetti_33
+  - first:
+      213: 5691657575048459978
+    second: Level4Confetti_34
+  - first:
+      213: 8815480916583903080
+    second: Level4Confetti_35
+  - first:
+      213: -6629752914720025116
+    second: Level4Confetti_36
+  - first:
+      213: -9207143187859226487
+    second: Level4Confetti_37
+  - first:
+      213: -1512691903099528112
+    second: Level4Confetti_38
+  - first:
+      213: 2656195124302615794
+    second: Level4Confetti_39
+  - first:
+      213: 8497130405900426482
+    second: Level4Confetti_40
+  - first:
+      213: 6455604431213885379
+    second: Level4Confetti_41
+  - first:
+      213: 1433025931477223989
+    second: Level4Confetti_42
+  - first:
+      213: -3703591943148826484
+    second: Level4Confetti_43
+  - first:
+      213: -8223147931910875809
+    second: Level4Confetti_44
+  - first:
+      213: 23877037128512372
+    second: Level4Confetti_45
+  - first:
+      213: -2281143172032208588
+    second: Level4Confetti_46
+  - first:
+      213: 1899618834072890954
+    second: Level4Confetti_47
+  - first:
+      213: -3229859423585853550
+    second: Level4Confetti_48
+  - first:
+      213: -173495383258422627
+    second: Level4Confetti_49
+  - first:
+      213: -8282064198112308864
+    second: Level4Confetti_50
+  - first:
+      213: 5920584693997212856
+    second: Level4Confetti_51
+  - first:
+      213: 2363654565821402865
+    second: Level4Confetti_52
+  - first:
+      213: 8438807550997081389
+    second: Level4Confetti_53
+  - first:
+      213: -4140309411399325087
+    second: Level4Confetti_54
+  - first:
+      213: 5820076651423922673
+    second: Level4Confetti_55
+  - first:
+      213: 6758065895133487871
+    second: Level4Confetti_56
+  - first:
+      213: -4396916239652728136
+    second: Level4Confetti_57
+  - first:
+      213: 3273972712469772323
+    second: Level4Confetti_58
+  - first:
+      213: -7789387430779021861
+    second: Level4Confetti_59
+  - first:
+      213: 2210212860920225817
+    second: Level4Confetti_60
+  - first:
+      213: -4131745516241641250
+    second: Level4Confetti_61
+  - first:
+      213: 3593252827017770501
+    second: Level4Confetti_62
+  - first:
+      213: 6109125406072287903
+    second: Level4Confetti_63
+  - first:
+      213: 5682691297130108733
+    second: Level4Confetti_64
+  - first:
+      213: 4569220575891520998
+    second: Level4Confetti_65
+  - first:
+      213: 3149550918201580950
+    second: Level4Confetti_66
+  - first:
+      213: 8123237912471206573
+    second: Level4Confetti_67
+  - first:
+      213: -8875437222036986315
+    second: Level4Confetti_68
+  - first:
+      213: -5796879855135674486
+    second: Level4Confetti_69
+  - first:
+      213: -3287219725078926300
+    second: Level4Confetti_70
+  - first:
+      213: -8344148536847191317
+    second: Level4Confetti_71
+  - first:
+      213: 9031426817553657163
+    second: Level4Confetti_72
+  - first:
+      213: -1656525854998073635
+    second: Level4Confetti_73
+  - first:
+      213: -4414075441455481486
+    second: Level4Confetti_74
+  - first:
+      213: 3378692837187920938
+    second: Level4Confetti_75
+  - first:
+      213: -4183363086250086011
+    second: Level4Confetti_76
+  - first:
+      213: -2162498764901962559
+    second: Level4Confetti_77
+  - first:
+      213: 5329955690417391278
+    second: Level4Confetti_78
+  - first:
+      213: 2782573895005228218
+    second: Level4Confetti_79
+  - first:
+      213: 6826295594635138268
+    second: Level4Confetti_80
+  - first:
+      213: -5171670744902351360
+    second: Level4Confetti_81
+  - first:
+      213: 3963232172030021553
+    second: Level4Confetti_82
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Level4Confetti_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 68
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37d85ab6bf6744f0800000000000000
+      internalID: -844583574507563206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_1
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 340
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0267642b23a81c040800000000000000
+      internalID: 4666162639276504608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 337
+        width: 31
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba516e4634da5bf0800000000000000
+      internalID: -334721892577355083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 336
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5eb7257b21d0470800000000000000
+      internalID: 8362360661669045702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 344
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888007ba42f8b03f0800000000000000
+      internalID: -933495110091405176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 317
+        width: 49
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 507b9581863cd39e0800000000000000
+      internalID: -1639939837440444667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 341
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6facd90de47c198b0800000000000000
+      internalID: -5147113757786387722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_7
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 340
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68c5bc40847bd0af0800000000000000
+      internalID: -428484869584364410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_8
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 320
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b8069ad264f1f70800000000000000
+      internalID: 9160117329024027527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_9
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 326
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a815b07bf576d7490800000000000000
+      internalID: -7746922123216858742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_10
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 340
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e892abdcced8cd0800000000000000
+      internalID: -2554125045313466863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_11
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 341
+        width: 20
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c32a394c4c77e20800000000000000
+      internalID: 3348361196542770293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_12
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 333
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2daf773598f0d650800000000000000
+      internalID: 6255773202182548778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 345
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c4f733f6d1418b0800000000000000
+      internalID: -5182484907754042246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_14
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 336
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be01231d8afcbc410800000000000000
+      internalID: 1498519625001996523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 300
+        width: 37
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad7460bf57cde9c0800000000000000
+      internalID: -3896238888810414675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_16
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 334
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd9efe2027c29520800000000000000
+      internalID: 2707445267044408761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_17
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 345
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8578fde0cba76ba0800000000000000
+      internalID: -6095714725508123252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_18
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 328
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fbb573c0f30a430800000000000000
+      internalID: 3792100207946874728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_19
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 310
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a501a70dbd5fa760800000000000000
+      internalID: 7471293373289137572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_20
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 331
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65fe486b4d0ab4d60800000000000000
+      internalID: 7875565208843120470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_21
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 324
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8877fae4ced586dc0800000000000000
+      internalID: -3645560628842629240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_22
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 310
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 814be0ba22fca0350800000000000000
+      internalID: 5983822802720830488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_23
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 319
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af120eafa473decd0800000000000000
+      internalID: -2527303020708879878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_24
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 310
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe1a019cc0cd66ba0800000000000000
+      internalID: -6095943098128358929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_25
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 293
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14bcff09ad0048270800000000000000
+      internalID: 8251721355985144641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_26
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 291
+        width: 61
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe3753e571d865b00800000000000000
+      internalID: 816995513918649327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_27
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 303
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b8b12b83b50d800800000000000000
+      internalID: 635107846523685756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_28
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 317
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021144909e0e1a220800000000000000
+      internalID: 2495522960027423008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_29
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 299
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f85b4eeb8fc2ea0800000000000000
+      internalID: -5896064313370243323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_30
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 292
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4750a5a13fb2604a0800000000000000
+      internalID: -6627561478509951628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_31
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 283
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d5a7dee936a1610800000000000000
+      internalID: 1592694952469093656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_32
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 299
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac309b60b594e2b0800000000000000
+      internalID: -5556151455316951903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_33
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 297
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52754d1d1516b9cb0800000000000000
+      internalID: -4856180769148348635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_34
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 304
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6bce7a864dcfe40800000000000000
+      internalID: 5691657575048459978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_35
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 258
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86fe73def21e65a70800000000000000
+      internalID: 8815480916583903080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_36
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 238
+        width: 23
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5908999d26ef3a0800000000000000
+      internalID: -6629752914720025116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_37
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 270
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9804e7b5d08a93080800000000000000
+      internalID: -9207143187859226487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_38
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 252
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c942d8ab6d10be0800000000000000
+      internalID: -1512691903099528112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_39
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 261
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f49e267463bcd420800000000000000
+      internalID: 2656195124302615794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_40
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 210
+        width: 27
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc9ddd951fdbe570800000000000000
+      internalID: 8497130405900426482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_41
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 270
+        width: 39
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7f0f4e60ae69950800000000000000
+      internalID: 6455604431213885379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_42
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 267
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53a8f9ffd7123e310800000000000000
+      internalID: 1433025931477223989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_43
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 275
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c809d9b00c23a9cc0800000000000000
+      internalID: -3703591943148826484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_44
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 248
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f55d6f6268281ed80800000000000000
+      internalID: -8223147931910875809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_45
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 252
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473755ce904d45000800000000000000
+      internalID: 23877037128512372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_46
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 259
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431663dfe50c750e0800000000000000
+      internalID: -2281143172032208588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_47
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 245
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4e6e85d34dcc5a10800000000000000
+      internalID: 1899618834072890954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_48
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 254
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29f97be77fb3d23d0800000000000000
+      internalID: -3229859423585853550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_49
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 236
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9226be3ede979df0800000000000000
+      internalID: -173495383258422627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0811988fd72301d80800000000000000
+      internalID: -8282064198112308864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_51
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 240
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b4915c19642a2250800000000000000
+      internalID: 5920584693997212856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_52
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 214
+        width: 39
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fec38fed436dc020800000000000000
+      internalID: 2363654565821402865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_53
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 224
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2da015c1caac1570800000000000000
+      internalID: 8438807550997081389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_54
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 224
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16a2651d68aaa86c0800000000000000
+      internalID: -4140309411399325087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_55
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 234
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9faadd0e015c050800000000000000
+      internalID: 5820076651423922673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_56
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 191
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff22d18302979cd50800000000000000
+      internalID: 6758065895133487871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_57
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 233
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b25a54d9f30bf2c0800000000000000
+      internalID: -4396916239652728136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_58
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3283513f5dc7f6d20800000000000000
+      internalID: 3273972712469772323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_59
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 210
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd51682d66986e390800000000000000
+      internalID: -7789387430779021861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_60
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 202
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 910662503e04cae10800000000000000
+      internalID: 2210212860920225817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_61
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 212
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed0aa1a085719a6c0800000000000000
+      internalID: -4131745516241641250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_62
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 207
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 506ff86886ccdd130800000000000000
+      internalID: 3593252827017770501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_63
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 184
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f92b0457039f7c450800000000000000
+      internalID: 6109125406072287903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_64
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 180
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d37d4a560a9fcde40800000000000000
+      internalID: 5682691297130108733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_65
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 178
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ed7b6ea7e1296f30800000000000000
+      internalID: 4569220575891520998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_66
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 173
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69d19618fd375bb20800000000000000
+      internalID: 3149550918201580950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_67
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 174
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daaf4d6b7d98bb070800000000000000
+      internalID: 8123237912471206573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_68
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 164
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536a432eedc14d480800000000000000
+      internalID: -8875437222036986315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f25052c785d8fa0800000000000000
+      internalID: -5796879855135674486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_70
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 156
+        width: 28
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c630493137162d0800000000000000
+      internalID: -3287219725078926300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_71
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 161
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2b02c6d11a33c80800000000000000
+      internalID: -8344148536847191317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_72
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 147
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4de83b07d2165d70800000000000000
+      internalID: 9031426817553657163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_73
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 138
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddee693f286d209e0800000000000000
+      internalID: -1656525854998073635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_74
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 114
+        width: 60
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d3544d5cd0eb2c0800000000000000
+      internalID: -4414075441455481486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_75
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 140
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a242ebdfb3783ee20800000000000000
+      internalID: 3378692837187920938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_76
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 93
+        width: 33
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 581f49dff65b1f5c0800000000000000
+      internalID: -4183363086250086011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_77
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 122
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc2ccaa4d24df1e0800000000000000
+      internalID: -2162498764901962559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_78
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 121
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea686eb067ec7f940800000000000000
+      internalID: 5329955690417391278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_79
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 121
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abccf0df630bd9620800000000000000
+      internalID: 2782573895005228218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_80
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 105
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd49a021dafdbbe50800000000000000
+      internalID: 6826295594635138268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_81
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 93
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006c0d2bbd88a38b0800000000000000
+      internalID: -5171670744902351360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Level4Confetti_82
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 90
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfcf3099aa300730800000000000000
+      internalID: 3963232172030021553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Level4Confetti_0: -844583574507563206
+      Level4Confetti_1: 4666162639276504608
+      Level4Confetti_10: -2554125045313466863
+      Level4Confetti_11: 3348361196542770293
+      Level4Confetti_12: 6255773202182548778
+      Level4Confetti_13: -5182484907754042246
+      Level4Confetti_14: 1498519625001996523
+      Level4Confetti_15: -3896238888810414675
+      Level4Confetti_16: 2707445267044408761
+      Level4Confetti_17: -6095714725508123252
+      Level4Confetti_18: 3792100207946874728
+      Level4Confetti_19: 7471293373289137572
+      Level4Confetti_2: -334721892577355083
+      Level4Confetti_20: 7875565208843120470
+      Level4Confetti_21: -3645560628842629240
+      Level4Confetti_22: 5983822802720830488
+      Level4Confetti_23: -2527303020708879878
+      Level4Confetti_24: -6095943098128358929
+      Level4Confetti_25: 8251721355985144641
+      Level4Confetti_26: 816995513918649327
+      Level4Confetti_27: 635107846523685756
+      Level4Confetti_28: 2495522960027423008
+      Level4Confetti_29: -5896064313370243323
+      Level4Confetti_3: 8362360661669045702
+      Level4Confetti_30: -6627561478509951628
+      Level4Confetti_31: 1592694952469093656
+      Level4Confetti_32: -5556151455316951903
+      Level4Confetti_33: -4856180769148348635
+      Level4Confetti_34: 5691657575048459978
+      Level4Confetti_35: 8815480916583903080
+      Level4Confetti_36: -6629752914720025116
+      Level4Confetti_37: -9207143187859226487
+      Level4Confetti_38: -1512691903099528112
+      Level4Confetti_39: 2656195124302615794
+      Level4Confetti_4: -933495110091405176
+      Level4Confetti_40: 8497130405900426482
+      Level4Confetti_41: 6455604431213885379
+      Level4Confetti_42: 1433025931477223989
+      Level4Confetti_43: -3703591943148826484
+      Level4Confetti_44: -8223147931910875809
+      Level4Confetti_45: 23877037128512372
+      Level4Confetti_46: -2281143172032208588
+      Level4Confetti_47: 1899618834072890954
+      Level4Confetti_48: -3229859423585853550
+      Level4Confetti_49: -173495383258422627
+      Level4Confetti_5: -1639939837440444667
+      Level4Confetti_50: -8282064198112308864
+      Level4Confetti_51: 5920584693997212856
+      Level4Confetti_52: 2363654565821402865
+      Level4Confetti_53: 8438807550997081389
+      Level4Confetti_54: -4140309411399325087
+      Level4Confetti_55: 5820076651423922673
+      Level4Confetti_56: 6758065895133487871
+      Level4Confetti_57: -4396916239652728136
+      Level4Confetti_58: 3273972712469772323
+      Level4Confetti_59: -7789387430779021861
+      Level4Confetti_6: -5147113757786387722
+      Level4Confetti_60: 2210212860920225817
+      Level4Confetti_61: -4131745516241641250
+      Level4Confetti_62: 3593252827017770501
+      Level4Confetti_63: 6109125406072287903
+      Level4Confetti_64: 5682691297130108733
+      Level4Confetti_65: 4569220575891520998
+      Level4Confetti_66: 3149550918201580950
+      Level4Confetti_67: 8123237912471206573
+      Level4Confetti_68: -8875437222036986315
+      Level4Confetti_69: -5796879855135674486
+      Level4Confetti_7: -428484869584364410
+      Level4Confetti_70: -3287219725078926300
+      Level4Confetti_71: -8344148536847191317
+      Level4Confetti_72: 9031426817553657163
+      Level4Confetti_73: -1656525854998073635
+      Level4Confetti_74: -4414075441455481486
+      Level4Confetti_75: 3378692837187920938
+      Level4Confetti_76: -4183363086250086011
+      Level4Confetti_77: -2162498764901962559
+      Level4Confetti_78: 5329955690417391278
+      Level4Confetti_79: 2782573895005228218
+      Level4Confetti_8: 9160117329024027527
+      Level4Confetti_80: 6826295594635138268
+      Level4Confetti_81: -5171670744902351360
+      Level4Confetti_82: 3963232172030021553
+      Level4Confetti_9: -7746922123216858742
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
