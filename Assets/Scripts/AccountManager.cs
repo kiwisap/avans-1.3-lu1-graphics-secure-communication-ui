@@ -35,18 +35,18 @@ public class AccountManager : MonoBehaviour
     [Header("Feedback")]
     public TextMeshProUGUI feedbackText;
 
-    private AuthService authService;
+    private AccountService accountService;
 
     void Start()
     {
         accountPopup.SetActive(false);
 
-        // Find or create AuthService
-        authService = FindAnyObjectByType<AuthService>();
-        if (authService == null)
+        // Find or create AccountService
+        accountService = FindAnyObjectByType<AccountService>();
+        if (accountService == null)
         {
-            GameObject authGO = new GameObject("AuthService");
-            authService = authGO.AddComponent<AuthService>();
+            GameObject accountGO = new GameObject("AccountService");
+            accountService = accountGO.AddComponent<AccountService>();
         }
     }
 
@@ -90,11 +90,24 @@ public class AccountManager : MonoBehaviour
         }
 
         ToonFeedback("Inloggen...");
-        ApiResult result = await authService.LoginAsync(email, wachtwoord);
+        ApiResult result = await accountService.LoginAsync(email, wachtwoord);
         if (result.Ok)
         {
-            ToonFeedback("Inloggen gelukt!");
-            Debug.Log($"Login poging: {email}");
+            ApiResult<UserDto> userResult = await accountService.GetCurrentUserAsync();
+            if (userResult.Ok)
+            {
+                var user = userResult.Value;
+
+                ToonFeedback($"Welkom terug, {user.FirstName}!");
+                Debug.Log($"Login poging: {email}");
+
+                PlayerPrefs.SetInt("CurrentLevel", user.CurrentLevel);
+                PlayerPrefs.Save();
+                return;
+            }
+
+            ToonFeedback("Er is iets fout gegaan...");
+            Debug.Log($"Login poging: {email}. Ingelogd, maar kon User niet ophalen.");
             return;
         }
 
@@ -138,7 +151,7 @@ public class AccountManager : MonoBehaviour
         };
 
         ToonFeedback("Registreren...");
-        ApiResult result = await authService.RegisterAsync(registerDto);
+        ApiResult result = await accountService.RegisterAsync(registerDto);
         if (result.Ok)
         {
             ToonFeedback($"Welkom, {kindNaam}! Account aangemaakt.");
