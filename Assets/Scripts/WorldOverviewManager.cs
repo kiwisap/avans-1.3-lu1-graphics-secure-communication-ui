@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class WorldOverviewManager : MonoBehaviour
 {
@@ -31,6 +32,16 @@ public class WorldOverviewManager : MonoBehaviour
         "Level 4: Hier wordt een spirometer gesimuleerd en hoe die in zijn werking gaat met het trainen en testen",
         "Level 5: Je kind neemt zijn medicijnen en heeft even de tijd om een spelletje te spelen om tot rust te komen"
     };
+
+    private void OnEnable()
+    {
+        AccountManager.OnLoginSuccess += UpdateLevelUI;
+    }
+
+    private void OnDisable()
+    {
+        AccountManager.OnLoginSuccess -= UpdateLevelUI;
+    }
 
     void Start()
     {
@@ -97,7 +108,7 @@ public class WorldOverviewManager : MonoBehaviour
         speechBubbleTekst.text = levelUitleg[levelIndex];
     }
 
-    System.Collections.IEnumerator BeweegHerder(Vector2 target)
+    IEnumerator BeweegHerder(Vector2 target)
     {
         while (Vector2.Distance(herder.anchoredPosition, target) > 1f)
         {
@@ -115,7 +126,7 @@ public class WorldOverviewManager : MonoBehaviour
         speechBubble.SetActive(false);
     }
 
-    private void UpdateLevelUI()
+    public void UpdateLevelUI()
     {
         int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
 

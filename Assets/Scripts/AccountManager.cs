@@ -35,6 +35,8 @@ public class AccountManager : MonoBehaviour
     [Header("Feedback")]
     public TextMeshProUGUI feedbackText;
 
+    public static Action OnLoginSuccess;
+
     private AccountService accountService;
 
     void Start()
@@ -101,8 +103,10 @@ public class AccountManager : MonoBehaviour
                 ToonFeedback($"Welkom terug, {user.FirstName}!");
                 Debug.Log($"Login poging: {email}");
 
-                PlayerPrefs.SetInt("CurrentLevel", user.CurrentLevel);
+                PlayerPrefs.SetInt("CurrentLevel", Math.Max(user.CurrentLevel - 1, 0));
                 PlayerPrefs.Save();
+
+                OnLoginSuccess?.Invoke();
                 return;
             }
 

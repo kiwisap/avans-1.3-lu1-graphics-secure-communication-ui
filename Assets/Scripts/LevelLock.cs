@@ -6,7 +6,22 @@ public class LevelLock : MonoBehaviour
     public int requiredLevel;
     public Button button;
 
+    private void OnEnable()
+    {
+        AccountManager.OnLoginSuccess += HandleLoginSuccess;
+    }
+
+    private void OnDisable()
+    {
+        AccountManager.OnLoginSuccess -= HandleLoginSuccess;
+    }
+
     void Start()
+    {
+        UpdateInteractableState();
+    }
+
+    private void UpdateInteractableState()
     {
         // Ouders hebben altijd toegang tot alle levels
         if (GameState.IsOuder) return;
@@ -16,5 +31,10 @@ public class LevelLock : MonoBehaviour
         {
             button.interactable = false;
         }
+    }
+
+    private void HandleLoginSuccess()
+    {
+        UpdateInteractableState();
     }
 }
