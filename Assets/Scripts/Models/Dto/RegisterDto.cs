@@ -9,9 +9,7 @@ namespace Assets.Scripts.Models.Dto
 
         public string Password { get; set; } = default!;
 
-        public string FirstName { get; set; } = default!;
-
-        public string LastName { get; set; } = default!;
+        public string Name { get; set; } = default!;
 
         public int Age { get; set; }
 

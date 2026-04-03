@@ -100,7 +100,7 @@ public class AccountManager : MonoBehaviour
             {
                 var user = userResult.Value;
 
-                ToonFeedback($"Welkom terug, {user.FirstName}!");
+                ToonFeedback($"Welkom terug, {user.Name}!");
                 Debug.Log($"Login poging: {email}");
 
                 PlayerPrefs.SetInt("CurrentLevel", Math.Max(user.CurrentLevel - 1, 0));
@@ -146,8 +146,7 @@ public class AccountManager : MonoBehaviour
         {
             Email = email,
             Password = wachtwoord,
-            FirstName = kindNaam,
-            LastName = kindNaam,
+            Name = kindNaam,
             Age = int.Parse(leeftijd),
             DoctorName = artsNaam,
             TreatmentDetails = behandelType,
