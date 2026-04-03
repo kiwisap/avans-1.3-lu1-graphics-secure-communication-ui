@@ -1,6 +1,10 @@
+using Assets.Scripts.Models;
+using Assets.Scripts.Models.Dto;
+using Assets.Scripts.Services;
+using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class AccountManager : MonoBehaviour
 {
@@ -31,9 +35,21 @@ public class AccountManager : MonoBehaviour
     [Header("Feedback")]
     public TextMeshProUGUI feedbackText;
 
+    public static Action OnLoginSuccess;
+
+    private AccountService accountService;
+
     void Start()
     {
         accountPopup.SetActive(false);
+
+        // Find or create AccountService
+        accountService = FindAnyObjectByType<AccountService>();
+        if (accountService == null)
+        {
+            GameObject accountGO = new GameObject("AccountService");
+            accountService = accountGO.AddComponent<AccountService>();
+        }
     }
 
     // AccountButton
@@ -64,7 +80,7 @@ public class AccountManager : MonoBehaviour
         registerTabImage.color = actieveTabKleur;
     }
 
-    public void OnLoginGedrukt()
+    public async void OnLoginGedrukt()
     {
         string email = loginEmail.text.Trim();
         string wachtwoord = loginWachtwoord.text;
@@ -75,47 +91,82 @@ public class AccountManager : MonoBehaviour
             return;
         }
 
-        // Sla op in PlayerPrefs zodat backend later kan koppelen
-        PlayerPrefs.SetString("LoginEmail", email);
-        PlayerPrefs.Save();
+        ToonFeedback("Inloggen...");
+        ApiResult result = await accountService.LoginAsync(email, wachtwoord);
+        if (result.Ok)
+        {
+            ApiResult<UserDto> userResult = await accountService.GetCurrentUserAsync();
+            if (userResult.Ok)
+            {
+                var user = userResult.Value;
 
-        ToonFeedback("Inloggen... (backend wordt later gekoppeld)");
-        Debug.Log($"Login poging: {email}");
+                ToonFeedback($"Welkom terug, {user.Name}!");
+                Debug.Log($"Login poging: {email}");
+
+                PlayerPrefs.SetInt("CurrentLevel", Math.Max(user.CurrentLevel - 1, 0));
+                PlayerPrefs.Save();
+
+                OnLoginSuccess?.Invoke();
+                return;
+            }
+
+            ToonFeedback("Er is iets fout gegaan...");
+            Debug.Log($"Login poging: {email}. Ingelogd, maar kon User niet ophalen.");
+            return;
+        }
+
+        ToonFeedback($"Vul de juiste gegevens in.");
     }
 
-    public void OnRegistrerenGedrukt()
+    public async void OnRegistrerenGedrukt()
     {
         string kindNaam = regKindNaam.text.Trim();
         string leeftijd = regKindLeeftijd.text.Trim();
         string artsNaam = regArtsNaam.text.Trim();
         string behandelType = regBehandelType.text.Trim();
-        string behandelDatum = regBehandelDatum.text.Trim();
         string email = regEmail.text.Trim();
         string wachtwoord = regWachtwoord.text;
 
+        if (!DateTime.TryParse(regBehandelDatum.text.Trim(), out DateTime behandelDatumParsed))
+        {
+            ToonFeedback("Ongeldige datum!");
+            return;
+        }
+
         if (string.IsNullOrEmpty(kindNaam) || string.IsNullOrEmpty(leeftijd) ||
             string.IsNullOrEmpty(artsNaam) || string.IsNullOrEmpty(behandelType) ||
-            string.IsNullOrEmpty(behandelDatum) || string.IsNullOrEmpty(email) ||
+            string.IsNullOrEmpty(regBehandelDatum.text.Trim()) || string.IsNullOrEmpty(email) ||
             string.IsNullOrEmpty(wachtwoord))
         {
             ToonFeedback("Vul alle velden in!");
             return;
         }
 
-        // Sla gegevens op in PlayerPrefs zodat backend later kan koppelen
-        PlayerPrefs.SetString("KindNaam", kindNaam);
-        PlayerPrefs.SetInt("KindLeeftijd", int.Parse(leeftijd));
-        PlayerPrefs.SetString("ArtsNaam", artsNaam);
-        PlayerPrefs.SetString("BehandelType", behandelType);
-        PlayerPrefs.SetString("BehandelDatum", behandelDatum);
-        PlayerPrefs.SetString("RegisterEmail", email);
-        PlayerPrefs.Save();
+        var registerDto = new RegisterDto
+        {
+            Email = email,
+            Password = wachtwoord,
+            Name = kindNaam,
+            Age = int.Parse(leeftijd),
+            DoctorName = artsNaam,
+            TreatmentDetails = behandelType,
+            TreatmentDate = behandelDatumParsed.ToString("yyyy-MM-dd")
+        };
 
-        ToonFeedback($"Welkom, {kindNaam}! Account aangemaakt.");
-        Debug.Log($"Registratie: {kindNaam}, {email}");
+        ToonFeedback("Registreren...");
+        ApiResult result = await accountService.RegisterAsync(registerDto);
+        if (result.Ok)
+        {
+            ToonFeedback($"Welkom, {kindNaam}! Account aangemaakt.");
+            Debug.Log($"Registratie: {kindNaam}, {email}");
 
-        // Na registratie naar login tab
-        Invoke(nameof(ToonLoginTab), 2f);
+            // Na registratie naar login tab
+            Invoke(nameof(ToonLoginTab), 2f);
+            return;
+        }
+
+        Debug.LogError($"Registratie fout: {result.Error} {result.ErrorDetails?.ToString()}");
+        ToonFeedback("Registratie mislukt, helaas.");
     }
 
     void ToonFeedback(string bericht)

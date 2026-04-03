@@ -11,6 +11,9 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
+        // Verwijder alle opgeslagen voorkeuren
+        PlayerPrefs.DeleteAll();
+
         // Fade in bij opstarten
         StartCoroutine(FadeIn());
     }

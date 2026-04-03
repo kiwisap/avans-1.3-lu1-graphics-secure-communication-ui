@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class WorldOverviewManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class WorldOverviewManager : MonoBehaviour
     public Button level3Button;
     public Button level4Button;
     public Button level5Button;
+
+    private Button[] levelButtons;
 
     [Header("Karakters")]
     public GoatMover goatMover;
@@ -30,19 +33,28 @@ public class WorldOverviewManager : MonoBehaviour
         "Level 5: Je kind neemt zijn medicijnen en heeft even de tijd om een spelletje te spelen om tot rust te komen"
     };
 
+    private void OnEnable()
+    {
+        AccountManager.OnLoginSuccess += UpdateLevelUI;
+    }
+
+    private void OnDisable()
+    {
+        AccountManager.OnLoginSuccess -= UpdateLevelUI;
+    }
+
     void Start()
     {
+        levelButtons = new[] {
+            level1Button,
+            level2Button,
+            level3Button,
+            level4Button,
+            level5Button
+        };
+
         // Voortgang tonen
-        if (PlayerPrefs.GetInt("Level1Complete") == 1)
-            level1Button.image.color = Color.green;
-        if (PlayerPrefs.GetInt("Level2Complete") == 1)
-            level2Button.image.color = Color.green;
-        if (PlayerPrefs.GetInt("Level3Complete") == 1)
-            level3Button.image.color = Color.green;
-        if (PlayerPrefs.GetInt("Level4Complete") == 1)
-            level4Button.image.color = Color.green;
-        if (PlayerPrefs.GetInt("Level5Complete") == 1)
-            level5Button.image.color = Color.green;
+        UpdateLevelUI();
 
         speechBubble.SetActive(false);
 
@@ -96,7 +108,7 @@ public class WorldOverviewManager : MonoBehaviour
         speechBubbleTekst.text = levelUitleg[levelIndex];
     }
 
-    System.Collections.IEnumerator BeweegHerder(Vector2 target)
+    IEnumerator BeweegHerder(Vector2 target)
     {
         while (Vector2.Distance(herder.anchoredPosition, target) > 1f)
         {
@@ -112,5 +124,18 @@ public class WorldOverviewManager : MonoBehaviour
     public void SluitSpeechBubble()
     {
         speechBubble.SetActive(false);
+    }
+
+    public void UpdateLevelUI()
+    {
+        int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
+
+        for (int i = 0; i < levelButtons.Length; i++)
+        {
+            if (i < currentLevel)
+            {
+                levelButtons[i].image.color = Color.green;
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class GoatMover : MonoBehaviour
 {
@@ -8,11 +9,21 @@ public class GoatMover : MonoBehaviour
 
     private RectTransform rectTransform;
 
+    private void OnEnable()
+    {
+        AccountManager.OnLoginSuccess += HandleLoginSuccess;
+    }
+
+    private void OnDisable()
+    {
+        AccountManager.OnLoginSuccess -= HandleLoginSuccess;
+    }
+
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
         int currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
-        int goatIndex = Mathf.Max(0, currentLevel - 1); // ← dit
+        int goatIndex = Mathf.Max(0, currentLevel - 1);
         rectTransform.anchoredPosition =
             levelPoints[goatIndex].GetComponent<RectTransform>().anchoredPosition;
     }
@@ -35,5 +46,11 @@ public class GoatMover : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    private void HandleLoginSuccess()
+    {
+        var currentLevel = PlayerPrefs.GetInt("CurrentLevel", 0);
+        MoveToLevel(currentLevel);
     }
 }
