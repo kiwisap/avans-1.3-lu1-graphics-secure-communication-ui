@@ -155,6 +155,7 @@ public class AccountManager : MonoBehaviour
 
         ToonFeedback("Registreren...");
         ApiResult result = await accountService.RegisterAsync(registerDto);
+        
         if (result.Ok)
         {
             ToonFeedback($"Welkom, {kindNaam}! Account aangemaakt.");

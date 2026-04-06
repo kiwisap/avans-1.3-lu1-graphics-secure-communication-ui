@@ -7,6 +7,7 @@ public class LevelStatus : MonoBehaviour
 
     public void CompleteLevel()
     {
-        levelImage.color = Color.green;
+        Color unlocked = new Color(0.145f, 0.388f, 0.922f);
+        levelImage.color = unlocked;
     }
 }

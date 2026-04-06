@@ -30,6 +30,7 @@ public class FinishLevel : MonoBehaviour
         {
             UpdateCurrentLevelLocally();
             Debug.Log("Level updated locally successfully");
+            SceneManager.LoadScene("WorldOverview");
             return;
         }
 

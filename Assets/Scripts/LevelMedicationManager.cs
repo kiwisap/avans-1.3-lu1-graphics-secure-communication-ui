@@ -19,7 +19,7 @@ public class LevelMedicationManager : MonoBehaviour
     [Header("Gameplay")]
     public GoatGlider goatGlider;
     public MedicationBGScroller backgroundScroller;
-    public float gameDuration = 60f;
+    public float gameDuration = 10f;
     private float timeRemaining;
     private bool gameRunning = false;
     public ProceduralGround ground;
